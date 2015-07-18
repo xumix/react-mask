@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/andrevvalle/react-mask",
   "dependencies": {
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "vanilla-masker": "^1.0.9"
   },
   "devDependencies": {
     "babel-core": "^5.7.4",
