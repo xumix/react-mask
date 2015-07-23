@@ -11,3 +11,32 @@ npm-compatible packaging system such as [Browserify](http://browserify.org/).
 ```
 npm install react-mask --save
 ```
+
+
+## Usage
+
+```javascript
+var React = require('react')
+var MaskInput = require('react-mask')
+
+var InputTelephone = React.createClass({
+
+  	getInitialState() {
+		return {
+			mask: "+99 (999) 99999-9999"
+		};
+	},
+
+	render() {
+		return (
+			<div>
+				<MaskInput
+					mask={this.state.mask}
+					placeholder={this.state.mask} />
+			</div>
+		);
+	}
+});
+
+React.render(<InputTelephone />, document.body);
+```
