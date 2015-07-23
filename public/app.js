@@ -29,8 +29,17 @@ var App = React.createClass({
 							<h5 className="header col s12 light">A Modern Component Mask Input with React.JS</h5>
 						</div>
 						<div className="row center">
-							<MaskInput mask={this.state.mask} placeholder={this.state.mask} />
-							<button className="btn-large waves-effect waves-light teal lighten-1" onClick={this.onClick}>Click</button>
+							<div className="col s6">
+								<MaskInput
+									mask={this.state.mask}
+									placeholder={this.state.mask} />
+								<button className="btn-large waves-effect waves-light teal lighten-1" onClick={this.onClick}>Click</button>
+							</div>
+							<div className="col s6">
+								<MaskInput
+									mask="SSSS.SSSS.SSSS"
+									placeholder="SSSS.SSSS.SSSS" />
+							</div>
 						</div>
 						<br/><br/>
 					</div>

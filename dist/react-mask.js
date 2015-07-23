@@ -8,8 +8,8 @@ var MaskInput = React.createClass({
 	propTypes: {
 		type: React.PropTypes.string,
 		id: React.PropTypes.string,
-		mask: React.PropTypes.string.isRequired,
-		placeholder: React.PropTypes.string.string
+		mask: React.PropTypes.string,
+		placeholder: React.PropTypes.string
 	},
 
 	getInitialState() {
